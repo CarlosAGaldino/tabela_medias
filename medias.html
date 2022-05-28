@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Calculadora de Médias</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Médias</h1>
+    </header>
+    <main>
+        <table>
+            <thead class="cabecalho">
+                <tr>
+                    <th>Matéria</th>
+                    <th>1º Bimestre</th>
+                    <th>2º Bimestre</th>
+                    <th>3º Bimestre</th>
+                    <th>4º Bimestre</th>
+                    <th>Nota Final</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-nota">
+           
+            </tbody>
+        </table>
+       
+    </main>
+    <section class="adc-campo">
+        <h2>Adicionar notas:</h2>
+        <ul id="error">
+            <li class="mensgem-error"></li>
+        </ul>
+        <form class="adiciona-notas">
+            <select  id="materias" >
+                <option class="disciplina" value="Física">Física</option>
+                <option class="disciplina" value="Matemática">Matemática</option>
+                <option class="disciplina" value="Português">Português</option>
+                <option class="disciplina" value="Química">Química</option>
+                <option class="disciplina" value="Biologia">Biologia</option>
+                <option class="disciplina" value="História">História</option>
+                <option class="disciplina" value="Geográfia">Geográfia</option>
+                <option class="disciplina" value="Sociologia">Sociologia</option>
+                <option class="disciplina" value="Filosofia">Filosofia</option>
+                <option class="disciplina" value="Inglês">Inglês</option>
+                
+            </select>
+            <div class="notas">
+                <label for="1Bi">Nota:</label>
+                <input id="nota1" type="text" placeholder="Nota B1" class="campo">
+            </div>
+            <div class="notas">
+                <label for="2Bi">Nota:</label>
+                <input id="nota2" type="text" placeholder="Nota B2" class="campo">
+            </div>
+            <div class="notas">
+                <label for="3Bi">Nota:</label>
+                <input id="nota3" type="text" placeholder="Nota B3" class="campo">
+            </div>
+            <div class="notas">
+                <label for="4Bi">Nota:</label>
+                <input id="nota4" type="text" placeholder="Nota B4" class="campo">
+            </div>
+            <button id="adicionar-nota">Adicionar Notas</button>
+            <button id="finalizar">Finalizar</button>
+        </form>
+    </section>
+    <script src="js/adicionar-nota.js"></script>
+    <script src="js/erros.js"></script>
+    <script src="js/calculo-media.js"></script>
+    <script src="js/deleta-materia.js"></script>
+   
+</body>
+</html>

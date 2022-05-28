@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+background-color:#FAA278;
+font-family: 'Roboto Slab', serif;
+}
+header, h2{
+    background-color: #AD775C;
+    text-align: center;
+}
+.cabecalho{
+    background-color: #6CBBFA;
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+td,th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+td{
+    font-weight: bolder;
+}
+
+/*campo de preenchimento*/
+.adc-campo{
+    border: 1px solid black;
+    width: 200px;
+    margin: auto;
+}
+
+.notas{
+    margin-left: 50px;
+    font-weight: bolder;
+}
+.campo{
+    width: 60px;
+    text-align: center;
+    margin: 5px;
+    
+}
+#adicionar-nota, #finalizar{
+    width: 110px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin: 10px 50px;
+    border-radius: 6px;
+}
+#error{
+    list-style: none;
+    line-height: 1.2em;
+    color: #145574;
+    margin: 10px 20px;
+    padding-left: 5px;
+
+    background-color: #ffffff34;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+#materias{
+    margin: 5px 10px;
+    border-radius: 5px;
+    
+}
+
+
+/*Ações pra acontecerem dentro do js em relação as notas.*/
+.vermelha{
+    color:rgb(255, 5, 5);
+    font-weight: bold;
+}
+.azul{
+    color:blue;
+    font-weight: bold;
+}
+/*Aprovação ou Reprovação*/
+.aprovado{
+    background-color:#a6e66e81 ;
+}
+.reprovado{
+    background-color: #e78f878f;
+}
